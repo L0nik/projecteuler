@@ -8,6 +8,11 @@ def solution1(num, mul_1, mul_2):
 
 def solution2(num, mul_1, mul_2):
 
+    """
+    This way of solving the problem, while being slightly more complex,
+    allows to significantly reduce the number of iterations
+    """
+
     res = 0
     a = num // mul_1
     b = num // mul_2
