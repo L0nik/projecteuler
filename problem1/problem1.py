@@ -1,5 +1,10 @@
 
 def solution1(num, mul_1, mul_2):
+
+    """
+    This is the straightforward solution
+    """
+
     res = 0
     for i in range(1, num):
         if (i % mul_1 == 0) or (i % mul_2 == 0):
