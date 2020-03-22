@@ -1,5 +1,10 @@
 
 def solution1(num, mul_1, mul_2):
+
+    """
+    This is the straightforward solution
+    """
+
     res = 0
     for i in range(1, num):
         if (i % mul_1 == 0) or (i % mul_2 == 0):
@@ -7,6 +12,11 @@ def solution1(num, mul_1, mul_2):
     return res
 
 def solution2(num, mul_1, mul_2):
+
+    """
+    This way of solving the problem, while being slightly more complex,
+    allows to significantly reduce the number of iterations
+    """
 
     res = 0
     a = num // mul_1
